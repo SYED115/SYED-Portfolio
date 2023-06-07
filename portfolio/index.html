@@ -1,0 +1,340 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawoof - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(6, 6, 105);
+
+        }
+
+        nav ul {
+            display: flex; 
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(150, 150, 255);
+            font-size: 1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(90, 90, 203);
+            height: 1.2px;
+            margin: 40px 84px;
+            
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 30px 0;
+
+        }
+
+        .purple {
+            color: rgb(150, 70, 224);
+        }
+
+        .grey-text {
+            color: rgb(150, 70, 224);
+            font-size: 2rem;
+        }
+
+        #element {
+            color: rgb(150, 70, 224);
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            padding-bottom: 55px;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 180vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            width: 100px;
+            position: relative;
+            top: -90px;
+            left: -50px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 4px;
+            width: 150px;
+            font-size: 20px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 10px;
+            color: gray;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        /* footer {
+            background-color: rgb(91, 27, 193);
+            height: 250px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+        } */
+        /* h2,
+        h3 {
+            text-align: center;
+        } */
+
+        .contact-message {
+
+            width: 40%;
+            margin: 40px auto 60px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .btn {
+            /* background: #1a1e1e;
+            background-image: -webkit-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: -moz-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: -ms-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: -o-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: linear-gradient(to bottom, #1a1e1e, #1a1e1e);
+            -webkit-border-radius: 19;
+            -moz-border-radius: 19; */
+            border-radius: 19px;
+            font-family: 'Poppins', sans-serif;
+            color:rgb(6, 6, 105)3;
+            font-size: 15px;
+            padding: 12px 18px 13px 20px;
+            text-decoration: none;
+
+        }
+
+        .btn:hover {
+            background: #1a1e1e;
+            /* background: #1a1e1e;
+            background-image: -webkit-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: -moz-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: -ms-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: -o-linear-gradient(top, #1a1e1e, #1a1e1e);
+            background-image: linear-gradient(to bottom, #1a1e1e, #1a1e1e); */
+            color: rgb(25, 160, 205);
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+
+        .bottom-container {
+
+            margin-top: 60px;
+            background-color: rgb(6, 6, 105)3;
+            padding: 1px 0 10px;
+            font-size: 20px;
+        }
+
+        a {
+            margin-right: 16px;
+            text-decoration: none;
+            color: #88b6a7;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a:hover {
+            color: #ddeae6;
+        }
+
+        .copyright {
+            color: #eaf6f6;
+            font-size: smaller;
+            padding: 20;
+
+        }
+
+        .bottoms {
+            text-align: center;
+            background-color: rgb(6, 6, 105);
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rawoof's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Syed Rawoof</span>
+                <div>and I am a Passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+
+
+            </div>
+            <div class="rightsection">
+                <img src="photo.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="grey-text">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer-icon.png" alt="">
+                    <div class="vertical-title">HTML Developer (2020-2024)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
+                        incidunt!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="developer-icon.png" alt="">
+                    <div class="vertical-title">Node JS Developer (2020-2024)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
+                        incidunt!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer-icon.png" alt="">
+                    <div class="vertical-title">React JS Developer (2020-2024)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
+                        incidunt!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer-icon.png" alt="">
+                    <div class="vertical-title">Next JS Developer (2020-2024)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias,
+                        incidunt!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr class="horizon">
+    <div class="bottoms">
+        <div class="contact-me">
+            <h1>Get In Touch</h1>
+            <h2>I am just One Tap Away</h2>
+            <p class="contact-message">If You Got Any Query to Ask , Then Mail Or You Can Try Reaching Out My Social
+                Media.
+            </p>
+            <!-- <a class="btn" href="mailto:syedrawoof115@gmail.com">CONTACT ME</a> -->
+            <button class="btn" href="mailto:syedrawoof115@gmail.com">CONTACT ME</button>
+        </div>
+
+
+
+        <div class="bottom-container">
+
+            <a class="footer-link" href="https://www.linkedin.com/in/syed-rawoof-5b8288246">LinkedIn</a>
+            <a class="footer-link" href="https://github.com/SYED115">Github</a>
+            <a class="footer-link" href="http://syedrawoofs115.netlify.app">Website</a>
+            <p class="copyright">© Syed Rawoof MJCET'24</p>
+
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
